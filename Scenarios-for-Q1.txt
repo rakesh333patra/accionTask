@@ -1,0 +1,23 @@
+def format_zipcode(zip_code): 
+if len(zip_code) <= 5: 
+	return '{:>05}'.format(zip_code) 
+if len(zip_code) == 10: 
+	return str(zip_code) 
+if len(zip_code)== 9: 
+	return '{}-{}'.format(zip_code[:5], zip_code[5:])
+
+Scenarios:
+1.Verify that when the zip code entered of length<=5, the output string length should be 5 and it should be like below
+-----
+----x
+---xx
+--xxx
+-xxxx
+xxxxx
+for the lenght of input 0,1,2,3,4,5 respectively.
+2.Verify that if the length of the zip code is =10, then the output should return the exact string.
+
+3.Verify that if the length of the input ==9, then the output should be xxxxx-xxxx
+  e.g:input 123456789 --o/p :12345-6789
+4.Verfy that if the length of the input >10, the program throws error 
+   --as else part is absent
