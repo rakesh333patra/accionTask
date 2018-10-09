@@ -19,5 +19,5 @@ for the lenght of input 0,1,2,3,4,5 respectively.
 
 3.Verify that if the length of the input ==9, then the output should be xxxxx-xxxx
   e.g:input 123456789 --o/p :12345-6789
-4.Verfy that if the length of the input >10, the program throws error 
+4.Verfy that if the length of the input >10 or inbetween 6 to 8 both inclusive, the program should throws error 
    --as else part is absent
